@@ -11,3 +11,13 @@ function nameToAttributes(drivers)
     return {firstName: driverFirst, lastName: driverLast};
     })
 };
+
+function attributesToPhrase(drivers)
+ {
+  const string = [];
+  drivers.map(function(driver){
+    strings.push(`${driver.name} is from ${driver.hometown}`)
+  })
+  return strings;
+}
+attributesToPhrase(drivers);
